@@ -1,0 +1,31 @@
+<view class="page">
+
+    <view class="header">
+        <view class="title">已诊断疾病</view>
+    </view>
+    <view class="content">
+        <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">{{erromessage}}</view>
+        <modal hidden="{{hiddenmodalput}}" title="请填写患【{{getdisease.name}}】多少年了" data-bigkind="{{getdisease.bigkind}}" data-codekey="{{getdisease.codekey}}"confirm-text="确定" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+            <input type='number' placeholder="请输入数字"  bindinput ="bindKeyInput" value="{{getdisease.year}}"/>
+        </modal>
+        <view class="weui-alldisease weui-cells weui-cells_after-title">
+            <view class="weui-diseaselist" wx:for="{{icd10}}" wx:for-index='key1' wx:for-item='item'>
+                <view class="weui-disease__title" data-bigkind="{{key1}}" bindtap="bindShowDisease">
+                    <view class="bigdistitle">{{item.name}}</view>
+                </view>
+                <view class="weui-diseaseitem" hidden="{{!item.show}}">
+                    <view class=""  wx:for="{{item.subdise}}" wx:key='index' wx:for-item='itemdis'>
+
+                        <view class="lbdisease {{itemdis.choose?'choose':''}}" data-bigkind="{{key1}}" data-codekey="{{index}}" data-name="{{itemdis.name}}" bindtap="modalinput">
+                            <view class="vwdisease">{{itemdis.name}}{{itemdis.year==""?'':"("+itemdis.year+"年)"}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="footer">
+        <icon class="back" bindtap="goBack" type="download" size="33" color="#00A1E8"/>
+        <icon class="farwd" bindtap="goAhead" type="download" size="33" color="#00A1E8"/>
+    </view>
+</view>

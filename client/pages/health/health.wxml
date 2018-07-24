@@ -1,0 +1,155 @@
+<view class="page">
+  <view class="header">
+    <view class="title">健康数据</view>
+  </view>
+  <view class="content">
+    <view class="weightandwaist">
+      <view class="absolutespace">
+        <view class="weight">
+          <view class="absolutespace">
+            <view class="subtitle">体重<text class="dawei"> {{weight}}（kg）</text></view>
+            <view class="weightbiao" >
+              <view class="weightList-item" catchtouchmove="buttonMove" catchtouchstart="buttonStart" catchtouchend="buttonEnd" >
+                <view class="weightList-zhizhen">
+                </view>
+                <view class="weightList-sanjiao">
+                </view>
+                <view class="weightList-kedu" style="-webkit-transform:rotate({{tempAngle-90}}deg);transform:rotate({{tempAngle-90}}deg);"  >
+                  <view wx:for="{{weightList}}" wx:for-index="index" wx:for-item="value" style="-webkit-transform: rotate({{value*3}}deg);" class="weightList-circle-item {{value%5 == 0 ? 'longitem' : 'shortitem'}}"> </view>
+                  <view wx:for="{{weightList}}" wx:for-index="index" wx:for-item="value" style="-webkit-transform: rotate({{value*3}}deg);" class="{{value%5 == 0 ? 'weightList-circle-text' : ''}} {{value == weight ? 'weightsize' : ''}}" wx:if="{{value%5 == 0}}"> 
+                    {{value%5 == 0 ? value : ''}}
+                  </view>
+                </view>
+              </view>
+              <view class="weightList-yuanhuan">
+                <view class="weightList-wai-item">
+                  <view class="weightList-nei-item">
+                    <view class="weightvalue">{{weight}}<text>kg</text></view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="waist">
+          <view class="absolutespace">
+            <view class="subtitle">腹围<text class="dawei"> {{waist}}（cm）</text></view>
+            <view class="waistbiao" >
+              <view class="waistkuang" catchtouchmove="waistButtonMove" catchtouchstart="waistButtonStart" catchtouchend="waistButtonEnd">
+                <view class="waisttext" style="margin-left:{{waistLocation-40*30-7}}px;">
+                  <view wx:for="{{waistList}}" wx:for-index="index" wx:for-item="value" style="left: {{(value-40)*30}}px;" class="waistList-text {{value == waist ? 'waistsize' : ''}}"> 
+                    {{value}}
+                  </view>
+                </view>
+                <view class="waistfinger"></view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="height">
+      <view class="absolutespace">
+        <view class="subtitle">身高<text class="dawei"> {{height}}（cm）</text></view>
+        <view class="heightpig">
+          <image class="heightimg" src="../../images/man.png" />
+        </view>
+        <view class="heightbiaochi" catchtouchmove="heightButtonMove" catchtouchstart="heightButtonStart" catchtouchend="heightButtonEnd">
+          <view class="heightkedu" style="margin-top:{{heightLocation-70}}px;">
+            <view wx:for="{{heightList}}" wx:for-index="index" wx:for-item="value" style="top:{{(value-100)*5}}px" class="heightList-item {{value%5 == 0 ? 'longitem' : 'shortitem'}}"> </view>
+            <view wx:for="{{heightList}}" wx:for-index="index" wx:for-item="value" style="top:{{(value-100)*5}}px" class="{{value%5 == 0 ? 'heightList-text' : ''}} {{300-value == height ? 'heightsize' : ''}}" wx:if="{{value%5 == 0}}"> 
+              {{value%5 == 0 ? 300-value : ''}}
+            </view>
+          </view>
+          <view class="heighttext"></view>
+        </view>
+        <view class="heightfinger">
+          <view class="xuxian"></view>
+          <view class="shixian"></view>
+        </view>
+      </view>
+    </view>
+    <view class="clear"></view>
+    <view class="xueya">
+      <view class="subtitle">血压<text class="dawei">（mmHg）</text></view>
+      <view class="xueyayi">
+        <view class="xueyayibiao">
+          <view class="xueyayikedu">
+            <view wx:for="{{xueyayiList}}" wx:for-index="index" wx:for-item="value" style="top:{{(96-value)*5}}px" class="xueyayiList-item {{value%5 == 0 ? 'longitem' : 'shortitem'}}"> </view>
+            <view wx:for="{{xueyayiList}}" wx:for-index="index" wx:for-item="value" style="top:{{(96-value)*5}}px" class="xueyayiList-text" wx:if="{{value%5 == 0}}"> 
+              {{value*2}}
+            </view>
+          </view>
+        </view>
+        <view class="xueyayiguidao">
+          <view class="topkuang">
+            <view>收缩压</view>
+          </view>
+          <view class="gui"></view>
+          <view class="xueyadanwei">mmHg</view>
+        </view>
+        <view class="xueyayihand" >
+          <view class="yuanbing" style="top:{{155-xueyayiLocation}}px;" catchtouchmove="xueyayiButtonMove" catchtouchstart="xueyayiButtonStart" catchtouchend="xueyayiButtonEnd">
+            <view class="hengxian"></view>
+          </view>
+          <view class="xuxian" style="top:{{155-xueyayiLocation}}px;"></view>
+          <view class="tishi" style="top:{{155-xueyayiLocation}}px;">
+            <view class="xueyazhi">{{systolicpressure}}</view>
+            <view class="xiaosanjiao"></view>
+          </view>
+        </view>
+      </view>
+      <view class="xueyaer">
+        <view class="xueyaerbiao">
+          <view class="xueyaerkedu">
+            <view wx:for="{{xueyaerList}}" wx:for-index="index" wx:for-item="value" style="top:{{(76-value)*5}}px" class="xueyaerList-item {{value%5 == 0 ? 'longitem' : 'shortitem'}}"> </view>
+            <view wx:for="{{xueyaerList}}" wx:for-index="index" wx:for-item="value" style="top:{{(76-value)*5}}px" class="xueyaerList-text" wx:if="{{value%5 == 0}}"> 
+              {{value*2}}
+            </view>
+          </view>
+        </view>
+        <view class="xueyaerguidao">
+          <view class="topkuang">
+            <view>舒张压</view>
+          </view>
+          <view class="gui"></view>
+          <view class="xueyadanwei">mmHg</view>
+        </view>
+        <view class="xueyaerhand">
+          <view class="yuanbing" style="top:{{155-xueyaerLocation}}px;" catchtouchmove="xueyaerButtonMove" catchtouchstart="xueyaerButtonStart" catchtouchend="xueyaerButtonEnd">
+            <view class="hengxian"></view>
+          </view>
+          <view class="xuxian" style="top:{{155-xueyaerLocation}}px;"></view>
+          <view class="tishi" style="top:{{155-xueyaerLocation}}px;">
+            <view class="xueyazhi">{{diastolicpressure}}</view>
+            <view class="xiaosanjiao"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="danguchun">
+      <view class="subtitle">总胆固醇 <text class="dawei"> {{cholesterol}}（mmol/L）</text></view>
+      <view class="danguchunbiao">
+        <view class="danguchungai"></view>
+        <view class="danguchunping">
+          <view class="shangping" style="height:{{180-danguchunLocation}}px"></view>
+          <view class="xiaping" style="height:{{danguchunLocation}}px"></view>
+        </view>
+        <view class="danguchunhand">
+          <view class="chunyuanbing" style="bottom:{{danguchunLocation}}px" catchtouchmove="danguchunButtonMove" catchtouchstart="danguchunButtonStart" catchtouchend="danguchunButtonEnd">
+           <view class="neiyuanbing"></view>
+          </view>
+          <view class="chunxuxian" style="bottom:{{danguchunLocation}}px"></view>
+          <view class="chuntishi" style="bottom:{{danguchunLocation}}px">
+            <view class="danguchunzhi">{{cholesterol}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="footer">
+    <icon class="back" bindtap="goBack" type="download" size="30" color="#00A1E8"/>
+    <icon class="ahead" bindtap="goAhead" type="download" size="30" color="#00A1E8"/>
+  </view>
+</view>
+

@@ -1,0 +1,20 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/member/member",
+    "pages/health/health",
+    "pages/smoke/smoke",
+    "pages/ldlc/ldlc",
+    "pages/hdlc/hdlc",
+    "pages/disease/disease",
+    "pages/evaluate/evaluate",
+    "pages/addCgi/addCgi"
+  ],
+  "window":{
+    "backgroundColor":"#EEEBE9",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "测试小程序",
+    "navigationBarTextStyle":"black"
+  }
+}

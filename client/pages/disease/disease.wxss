@@ -1,0 +1,101 @@
+page{
+	background-color:#EDEBE9;
+	padding:15px 2% 5px 2%;
+}
+.page{
+	width:96%;
+}
+.header{
+	display:block;
+	line-height: 30px;
+	font-size:20px;
+	color: #666;
+	font-weight:bold;
+	margin-bottom:8px;
+}
+.title{
+	margin-left:10px;
+	display:inline;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #48C2F9;
+}
+.content{
+	width:100%;
+	margin-top:4px;
+	background-color:#ffffff;
+}
+.pad0{
+	padding:10px 0px;
+}
+.bigdistitle{
+	width:100%;
+}
+
+.listdisease{
+	background-color:#EEEBE9;
+	padding:15px 20px 15px 20px;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:flex;
+	-webkit-flex-wrap:wrap;
+	flex-wrap:wrap;
+}
+.lbdisease{
+	background-color:#FFFFFF;
+	padding:5px 10px;
+	border-radius:17px;
+	margin-bottom:10px;
+	margin-right:10px;
+}
+.weui-alldisease{
+	position:relative;
+	background-color:#fff;
+	line-height:1.41176471;
+	font-size:17px;
+	margin-top:0;
+}
+.weui-diseaselist{
+	padding:10px 15px 0px 15px;
+	position:relative;
+	display:block;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	align-items:center;
+}
+.weui-disease__title{
+	display:block;
+	padding:0px 0px 10px 0px;
+	border-bottom: 1px solid #EEEBE9;
+}
+.weui-diseaseitem{
+	background-color:#EEEBE9;
+	padding:15px 20px 15px 20px;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:flex;
+    -webkit-flex-wrap:wrap;
+	flex-wrap:wrap;
+}
+.choose{
+	background-color:#23cdb7;
+	color:#ffffff;
+}
+.footer{
+	position:relative;
+	width:100%;
+	background-color:#fff;
+	margin-top:0px;
+	height:50px;
+}
+.farwd{
+	position:absolute;
+	top:10px;
+	right:15px;
+	transform:rotate(-90deg);
+}
+.back{
+	position:absolute;
+	top:10px;
+	left:15px;
+	transform:rotate(90deg);
+}

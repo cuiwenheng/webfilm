@@ -1,0 +1,34 @@
+<view class="page">
+    <view class="header">
+        <view class="desc">
+            评估结果
+        </view>
+    </view>
+    <view class="imgcenter">
+        <view class="pic1">
+            <image  src="./pic_jg.png" style="width:{{image.autowidth-20*2}}pt;height:{{image.autoheight-20}}pt" bindload="autoimage" />
+            <view class="pic2">
+                <image  src="./pic_line.png" style="width:{{image.autowidth}}pt;height:{{image.autoheight}}pt" bindload="autoimage" />
+                <view class="evalueresult">
+                    <view class="result">{{result}}</view>
+                    <view class="kind">{{kind}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="evaluate">
+        <view class="evaluatetitle">
+            <view class="icon">
+                <image src="./icon_pg.png"/>
+            </view>
+            <view class="pgtitle">评估意义</view>
+        </view>
+        <view class="evaluatecontent">
+        动脉粥样硬化性心血管病（atherosclerotic cardiovascular disease,ASCVD）风险评估和危险分层是预防和控制心血管病的必要前提，已被国内外心血管病及其危险因素防治相关指南广泛采用，在临床实践和人群防治中发挥了重要的指导作用。有助于临床医生针对多重危险因素制定个体化的综合治疗策略，从而最大程度地降低患者ASCVD的总体风险。此外，ASCVD评估还是确定单个危险因素治疗策略的前提，是检出高危个体的重要手段。有利于对心血管病进行早期预防和早期干预，有助于患者进行自我健康管理提高预防意识和服药依从性。
+        </view>
+    </view>
+
+    <view class="footer">
+        <icon class="farwd" bindtap="goBack" type="download" size="33" color="#00A1E8"/>
+    </view>
+</view>

@@ -1,0 +1,30 @@
+<view class="page">
+    <view class="header">
+        <view class="desc">
+            您的高密度脂蛋白是多少？
+        </view>
+    </view>
+    <view class="content">
+        <view class="imgcenter">
+            <image src="./icon_hdlc.png" style="width:{{image.autowidth}}px;height:{{image.autoheight}}px" bindload="autoimage" />
+        </view>
+        <view class="incenter">
+            <text class="value">{{HDLC}}<text class="danwei">mmol/L</text></text>
+        </view>
+        <view class="biaochi" catchtouchmove="buttonMove" catchtouchstart="buttonStart" catchtouchend="buttonEnd">
+            <view class="biaotext" style="left:{{-thelocation}}px;">
+                <view wx:for="{{keduList}}" wx:for-index="index" wx:for-item="value" style="left:{{value*10}}px" class="{{value%5 == 0 ? 'List-text' : ''}} {{value/5 == HDLC ? 'heightsize' : ''}}" wx:if="{{value%5 == 0}}"> 
+                    {{value%5 == 0 ? value/5 : ''}}
+                </view>
+            </view>
+            <view class="biaokedu" style="left:{{-thelocation}}px;">
+                <view wx:for="{{keduList}}" wx:for-index="index" wx:for-item="value" style="left:{{value*10}}px" class="List-item {{value%5 == 0 ? 'longitem' : 'shortitem'}}"> </view>
+            </view>
+            <view class="zhizhen"></view>
+        </view>
+    </view>
+    <view class="footer">
+        <icon class="back" bindtap="goBack" type="download" size="33" color="#00A1E8"/>
+        <icon class="farwd" bindtap="goAhead" type="download" size="33" color="#00A1E8"/>
+    </view>
+</view>

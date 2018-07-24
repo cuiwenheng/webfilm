@@ -1,0 +1,57 @@
+
+mysql:
+  image: mysql/mysql-server:5.7
+  restart: always
+  environment:
+    MYSQL_ROOT_PASSWORD: mtmxiaochengxu
+  volumes:
+    - /opt/data/mtm/xiaochengxu/mysql:/var/lib/mysql
+    - ./mysql/config/my.cnf:/etc/my.cnf
+    - ./mysql/init:/docker-entrypoint-initdb.d/
+  expose:
+    - "3306"
+  ports:
+    - "3306:3306"
+
+adminer:
+  image: adminer
+  restart: always
+  ports:
+    - 8080:8080
+
+xiaochengxu:
+  #image: mtm:latest //nodejs updated to v6.12.3  by angel and rain 2018.1.11
+  image: xiaochengxu:latest
+  hostname: xiaochengxu
+  mem_limit: 1024m
+  restart: always
+  ports:
+    - "127.0.0.1:5757:5757"
+  expose:
+    - "5757"
+  links:
+    - mysql:mysql
+  volumes:
+    - ./:/usr/src/app
+
+# nginx to forward request, may split it out in future
+nginx:
+  image: yeasy/nginx
+  hostname: nginx
+  restart: always
+  links:
+    - xiaochengxu:xiaochengxu
+  volumes:
+    - ./nginx.conf:/etc/nginx/nginx.default.conf
+    - /opt/data/mtm/nginx/log/:/var/log/nginx/
+    - ./server/certificate/:/etc/nginx/certificate/
+  ports:
+    #- "80:80"
+    - "443:443"
+  environment:
+    - BACKEND=xiaochengxu
+    - PORT=5757
+    # - USERNAME=mtmuser
+    # - PASSWORD=pass4dev
+
+

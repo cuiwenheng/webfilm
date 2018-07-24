@@ -1,0 +1,141 @@
+page{
+	display: flex;
+	flex-direction: column;
+	background-color:#EDEBE9;
+	box-sizing:border-box;
+	padding:0 2% 0 2%;
+	height:100%;
+}
+.page{
+	margin-top:6px;
+	box-sizing:border-box;
+	width:100%;
+	position:relative;
+	height:98%;
+	background-color:#fff;
+}
+
+.header{
+	position:relative;
+	height:15%;
+}
+.desc {
+	position:relative;
+	top:30%;
+	color: #666;
+	text-align: center;
+	font-size: 24px;
+	font-weight:bold;
+}
+.content{
+	position:relative;
+	height:75%;
+}
+.imgcenter{
+	width:100%;
+	text-align:center;
+	height:65%;
+}
+image {
+	height:300px;
+	margin: 0 auto;
+}
+
+.incenter{
+	width:100%;
+	height:15%;
+	text-align:center;
+}
+/*金额*/
+.value {
+	color: #48c23d;
+	font-size: 28px;
+	text-align: center;
+	line-height: 35px;
+}
+
+/*单位*/
+.danwei{
+	color: gray;
+	font-size: 22px;
+	margin-left: 5px;
+}
+.value:after {
+	font-size: 16px;
+	color: gray;
+	content: '（每天）';
+	margin-left: -10px;
+}
+.biaochi{
+	position:relative;
+	widht:100%;
+	height:20%;
+	overflow:hidden;
+}
+.biaotext{
+	box-sizing:border-box;
+	position:absolute;
+	top:0;
+	width:500px;
+	height:40%;
+	margin-left:50%;
+}
+.List-text{
+	position:absolute;
+	margin-left:-20px;
+	bottom:5%;
+	width:40px;
+	text-align:center;
+	font-size:16px;
+	color:#000000;
+}
+.biaokedu{
+	box-sizing:border-box;
+	position:absolute;
+	top:40%;
+	width:500px;
+	height:40%;
+	margin-left:50%;
+}
+.biaokedu .shortitem{
+	height:50%;
+}
+.List-item{
+	position:absolute;
+	width:0;
+	bottom:0;
+	height:90%;
+	border-left:2px solid rgb(212,212,212);
+}
+.zhizhen{
+	position: absolute;
+	top:80%;
+	left:50%;
+	width: 0;
+	height: 0;
+	margin-left:-7px;
+	right:0%;
+	margin-top:0px;
+	border-left: 8px solid transparent;  
+	border-right: 8px solid transparent;
+	border-bottom: 12px solid #48c23d;
+}
+
+.footer{
+	position:relative;
+	width:100%;
+	height:10%;
+	margin-top:0px;
+}
+.farwd{
+	position:absolute;
+	top:10%;
+	right:15px;
+	transform:rotate(-90deg);
+}
+.back{
+	position:absolute;
+	top:10%;
+	left:15px;
+	transform:rotate(90deg);
+}
