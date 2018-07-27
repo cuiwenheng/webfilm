@@ -292,7 +292,7 @@ function evaluatemem(member,health,disease){
 	//三、余生发病风险
 	//风险因素个数：
 	// 1、收缩压>=160mmHg和（或）舒张压>=100mmHg
-	// 2、LDL-C<1.0mmol/L(40mg/dl)
+	// 2、HDL-C<1.0mmol/L(40mg/dl)
 	// 3、非-HDL-C>=5.2mmol/L(200mg/dl)    
 	// 4、BMI>=28kg/m2
 	// 5、吸烟
@@ -300,7 +300,7 @@ function evaluatemem(member,health,disease){
 	if(health.systolicpressure>=160||health.diastolicpressure>=100){
 		factorsnum3++
 	}
-	if(health.LDLC<1.0){
+	if(health.HDLC<1.0){
 		factorsnum3++
 	}
 	// var nonhdlc=health.cholesterol-health.HDLC;
@@ -316,10 +316,8 @@ function evaluatemem(member,health,disease){
 		factorsnum3++
 	}
 	if(kind=="10年发病风险"&&result=="中危"&&!ageold55&&factorsnum3>=2){
-		if(kind===""&&result===""){
-			kind="余生发病风险";
-			result="高危";
-		}
+		kind="余生发病风险";
+		result="高危";
 	}
 	return {kind:kind,result:result};
 }

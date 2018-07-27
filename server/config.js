@@ -1,6 +1,7 @@
+const path = require('path');
 const CONF = {
     port: '5757',
-    rootPathname: '/home/testuser/myxchx3',
+    rootPathname:path.resolve(__dirname, '../'),
 
     // 微信小程序 App ID
     appId: 'wx5a4bfc606ddaaf37',
@@ -18,9 +19,9 @@ const CONF = {
      */
     mysql: {
         // host: 'localhost',
-        host: 'www.cuiwenheng.com',
+        host: 'xchxmysql',
         port: 3306,
-        user: 'root',
+        user: 'cuiwenheng',
         db: 'cAuth',
         pass: 'mtmxiaochengxu',
         char: 'utf8mb4'

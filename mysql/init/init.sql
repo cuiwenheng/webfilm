@@ -1,2 +1,2 @@
-CREATE USER 'luna'@'%' IDENTIFIED BY 'pwdluna';
-GRANT All privileges ON *.* TO 'luna'@'%';
+CREATE USER 'cuiwenheng'@'%' IDENTIFIED BY 'mtmxiaochengxu';
+GRANT All privileges ON *.* TO 'cuiwenheng'@'%';
