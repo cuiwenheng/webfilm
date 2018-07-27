@@ -20,7 +20,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 --  Table structure for `cSessionInfo`
 -- ----------------------------
-DROP TABLE IF EXISTS `cSessionInfo`;
+
 CREATE TABLE `cSessionInfo` (
   `open_id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `uuid` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -34,7 +34,7 @@ CREATE TABLE `cSessionInfo` (
   KEY `skey` (`skey`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='会话管理用户信息';
 
-DROP TABLE IF EXISTS `memberInfo`;
+
 CREATE TABLE `memberInfo` (
   `open_id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -49,7 +49,7 @@ CREATE TABLE `memberInfo` (
   KEY `openid` (`open_id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='用户基本信息';
 
-DROP TABLE IF EXISTS `healthInfo`;
+
 CREATE TABLE `healthInfo` (
   `open_id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `height` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -67,7 +67,7 @@ CREATE TABLE `healthInfo` (
   KEY `openid` (`open_id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='用户健康信息';
 
-DROP TABLE IF EXISTS `diseaseInfo`;
+
 CREATE TABLE `diseaseInfo` (
   `open_id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `icd10` varchar(6000) COLLATE utf8mb4_unicode_ci NOT NULL,
