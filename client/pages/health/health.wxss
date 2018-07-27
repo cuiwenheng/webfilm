@@ -614,12 +614,12 @@ page{
 }
 .chunyuanbing{
 	position:absolute;
-	width:16px;
-	height:16px;
+	width:22px;
+	height:22px;
 	border:2px solid rgb(253,223,117);
-	border-radius:10px;
+	border-radius:50%;
 	bottom:0px;
-	margin-bottom:-8px;
+	margin-bottom:-11px;
 	left:50%;
 	margin-left:70px;
 }
@@ -627,10 +627,10 @@ page{
 	position:absolute;
 	left:3px;
 	top:3px;
-	width:10px;
-	height:10px;
+	width:16px;
+	height:16px;
 	background-color:rgb(251,199,44);
-	border-radius:10px;
+	border-radius:50%;
 }
 .chunxuxian{
 	position:absolute;

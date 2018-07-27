@@ -1,13 +1,15 @@
 
 mysql:
   image: mysql/mysql-server:5.7
+  container_name: xchxmysql
   restart: always
   environment:
-    MYSQL_ROOT_PASSWORD: mtmxiaochengxu
+    - MYSQL_ROOT_PASSWORD=mtmxiaochengxu
+    - MYSQL_DATABASE=cAuth
   volumes:
-    - /opt/data/mtm/xiaochengxu/mysql:/var/lib/mysql
+    - /opt/data/mtm/xiaochengxu3/mysql:/var/lib/mysql
     - ./mysql/config/my.cnf:/etc/my.cnf
-    - ./mysql/init:/docker-entrypoint-initdb.d/
+    - ./mysql/init/:/docker-entrypoint-initdb.d/
   expose:
     - "3306"
   ports:
@@ -15,13 +17,15 @@ mysql:
 
 adminer:
   image: adminer
+  container_name: xchxadminer
   restart: always
   ports:
-    - 8080:8080
+    - "9999:8080"
 
 xiaochengxu:
   #image: mtm:latest //nodejs updated to v6.12.3  by angel and rain 2018.1.11
   image: xiaochengxu:latest
+  container_name: xiaochengxu
   hostname: xiaochengxu
   mem_limit: 1024m
   restart: always
@@ -37,10 +41,12 @@ xiaochengxu:
 # nginx to forward request, may split it out in future
 nginx:
   image: yeasy/nginx
+  container_name: xchxnginx
   hostname: nginx
   restart: always
   links:
     - xiaochengxu:xiaochengxu
+    - adminer:adminer
   volumes:
     - ./nginx.conf:/etc/nginx/nginx.default.conf
     - /opt/data/mtm/nginx/log/:/var/log/nginx/

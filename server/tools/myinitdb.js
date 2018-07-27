@@ -16,7 +16,8 @@ const INIT_DB_FILE = path.join(__dirname, './cAuth.sql')
 const DB = require('knex')({
     client: 'mysql',
     connection: {
-        host: config.host,
+        // host: config.host,
+        host:"localhost",
         port: config.port,
         user: config.user,
         password: config.pass,

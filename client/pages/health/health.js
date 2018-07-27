@@ -153,7 +153,9 @@ Page({
   buttonMove: function (e) {
     var that = this;
     var endPoint = e.touches[e.touches.length - 1];
-    var tempAngle=that.data.tempAngle+(endPoint.clientX-that.data.startPoint.clientX)/100;
+
+    var tempAngle=that.data.tempAngle+(endPoint.clientX-that.data.startPoint.clientX)/50;
+
     while(tempAngle>=360){
       tempAngle=tempAngle-360;
     }
