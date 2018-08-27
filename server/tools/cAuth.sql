@@ -40,7 +40,7 @@ CREATE TABLE `memberInfo` (
   `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `gender` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `birthday` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `phone` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `phone` varchar(40) COLLATE utf8mb4_unicode_ci,
   `kind` varchar(100) COLLATE utf8mb4_unicode_ci,
   `result` varchar(100) COLLATE utf8mb4_unicode_ci,
   `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,

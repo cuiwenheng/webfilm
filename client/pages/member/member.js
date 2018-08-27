@@ -14,7 +14,7 @@ Page({
       name:'',
       gender:"男",
       birthday:'1970-01-01',
-      phone:'',
+      // phone:'',
       erromessage:''
   },
   checkDate:function(data){
@@ -29,15 +29,15 @@ Page({
       errflag=true;
       error="请填写姓名！";
     }
-    if(!data.phone&&!errflag){
-      errflag=true;
-      error="请填写手机号！";
-    }
-    var phonereg=/^[1][3,4,5,7,8][0-9]{9}$/;
-    if(!phonereg.test(data.phone)&&!errflag){
-      errflag=true;
-      error="请填写正确手机号！";
-    }
+    // if(!data.phone&&!errflag){
+    //   errflag=true;
+    //   error="请填写手机号！";
+    // }
+    // var phonereg=/^[1][3,4,5,7,8][0-9]{9}$/;
+    // if(!phonereg.test(data.phone)&&!errflag){
+    //   errflag=true;
+    //   error="请填写正确手机号！";
+    // }
     if(errflag&&error){
       this.setData({
         showTopTips:true,

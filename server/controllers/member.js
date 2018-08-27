@@ -30,8 +30,8 @@ function save(body) {
             return mysql('memberInfo').update({
                 name:body.name,
                 gender:body.gender,
-                birthday:body.birthday,
-                phone:body.phone
+                birthday:body.birthday
+                // phone:body.phone
             }).where({
                 open_id
             })
@@ -40,8 +40,8 @@ function save(body) {
                 open_id, 
                 name:body.name,
                 gender:body.gender,
-                birthday:body.birthday,
-                phone:body.phone
+                birthday:body.birthday
+                // phone:body.phone
             })
         }
     })
