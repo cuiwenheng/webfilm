@@ -21,6 +21,9 @@ var config = {
         uploadhdlc: `${host}/weapp/hdlc`,
         uploaddisease: `${host}/weapp/disease`,
         evaluate: `${host}/weapp/evaluate`,
+        //抑郁症筛选路由
+        yiyumember: `${host}/weapp/yiyumember`,
+        yiyuend: `${host}/weapp/yiyuend`,
         // 测试的请求地址，用于测试会话
         requestUrl: `${host}/weapp/user`,
 

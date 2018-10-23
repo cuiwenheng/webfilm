@@ -1,0 +1,34 @@
+<view class="page">
+    <view class="header">
+        <view class="bigtitle">
+            有不如一死了之的念头
+        </view>
+        <view class="littletitle">
+            或想怎样伤害自己一下
+        </view>
+    </view>
+    <view class="content">
+        <view class="imgcenter">
+            <image src="{{host}}/resource/image/option9.png" style="width:{{image.autowidth}}rpx;height:{{image.autoheight}}rpx" bindload="autoimage" />
+        </view>
+        <view class="question">
+            <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">{{erromessage}}</view>
+            <view class="option">
+                <button class="checkbtton  {{(option9!=undefined&&option9==0)?'select':''}}" data-value="0"  bindtap="select"><text>没有</text></button>
+            </view>
+            <view class="option marg-l">
+                <button class="checkbtton  {{option9==1?'select':''}}" data-value="1"  bindtap="select"><text>有几天</text></button>
+            </view>
+            <view class="option marg-t">
+                <button class="checkbtton  {{option9==2?'select':''}}" data-value="2"  bindtap="select"><text>一半以上时间</text></button>
+            </view>
+            <view class="option marg-l marg-t">
+                <button class="checkbtton  {{option9==3?'select':''}}" data-value="3"  bindtap="select"><text>几乎天天</text></button>
+            </view>
+        </view>
+    </view>
+    <view class="footer">
+        <image class="back" bindtap="goBack" src="{{host}}/resource/image/back.png" style="width:60rpx;height:60rpx"/>
+        <image class="next" bindtap="goAhead" src="{{host}}/resource/image/next.png" style="width:60rpx;height:60rpx"/>
+    </view>
+</view>

@@ -1,0 +1,40 @@
+<view class="page">
+    <view class="title1">
+        <view>“心中的抑郁就像只黑狗，</view>
+        <view>一有机会就咬住我不放。”</view>
+        <view class="qianming">——丘吉尔</view>
+    </view>
+    <view class="pic1view">
+         <image class="pic1" src="{{host}}/resource/image/photo_1.png" style="width:{{image1.autowidth}}rpx;height:{{image1.autoheight}}rpx"  bindload="autoimage1"/>
+    </view>
+    <view class="title2">
+        <view><span class="mingci">抑郁症</span>这个词我们并不陌生。</view>
+        <view>从演员到导演，从作家到主持人，各行各业都</view>
+        <view>有人曾患过抑郁症</view>
+    </view>
+    <view class="lttitle2">诗人顾城因抑郁杀死了妻子并自杀</view>
+    <view class="pic2view">
+         <image class="pic2" src="{{host}}/resource/image/photo_2.png" style="width:{{image2.autowidth}}rpx;height:{{image2.autoheight}}rpx"  bindload="autoimage2"/>
+    </view>
+    <view class="lttitle3">演员张国荣因抑郁症从酒店高楼跃下</view>
+    <view class="pic3view">
+         <image class="pic3" src="{{host}}/resource/image/photo_3.png" style="width:{{image3.autowidth}}rpx;height:{{image3.autoheight}}rpx"  bindload="autoimage3"/>
+    </view>
+    <view class="lttitle4">
+        <view>《实话实说》栏目主持人崔永元</view>
+        <view>曾坦言自己患有严重的抑郁症</view>
+    </view>
+    <view class="pic4view">
+         <image class="pic4" src="{{host}}/resource/image/photo_4.png" style="width:{{image4.autowidth}}rpx;height:{{image4.autoheight}}rpx"  bindload="autoimage4"/>
+    </view>
+    <view class="content4">
+        一条条鲜活的生命消逝，我们才意识到，抑郁症已经像是某种“流行病”，它会悄无声息的带走身边的人。
+    </view>
+    <view class="endword">
+        <view>今天你抑郁了吗？让我们来检测一下吧！</view>
+        <view>请评估自己过去两周里，以下症状出现的频率</view>
+    </view>
+    <view class="startview">
+        <view class="startbutton" bindtap="goAhead">开始检测</view>
+    </view>
+</view>

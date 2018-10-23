@@ -20,6 +20,9 @@ Page({
     keduList:[]
   },
   onLoad: function (options) {
+    wx.setNavigationBarTitle({
+        title: "心血管疾病风险评估"
+    });
     that = this;
     var keduList=[];
     for(var n=0;n<=50;n++){

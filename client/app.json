@@ -8,13 +8,25 @@
     "pages/hdlc/hdlc",
     "pages/disease/disease",
     "pages/evaluate/evaluate",
-    "pages/addCgi/addCgi"
+    "pages/addCgi/addCgi",
+    "pages/yiyumember/yiyumember",
+    "pages/yiyustart/yiyustart",
+    "pages/yiyuoption1/yiyuoption1",
+    "pages/yiyuoption2/yiyuoption2",
+    "pages/yiyuoption3/yiyuoption3",
+    "pages/yiyuoption4/yiyuoption4",
+    "pages/yiyuoption5/yiyuoption5",
+    "pages/yiyuoption6/yiyuoption6",
+    "pages/yiyuoption7/yiyuoption7",
+    "pages/yiyuoption8/yiyuoption8",
+    "pages/yiyuoption9/yiyuoption9",
+    "pages/yiyuend/yiyuend"
   ],
   "window":{
     "backgroundColor":"#EEEBE9",
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "心血管疾病风险评估",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle":"black"
   }
 }

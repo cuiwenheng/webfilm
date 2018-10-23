@@ -24,6 +24,9 @@ Page({
     tempAngle: 0,//移动角度
   },
   onLoad: function () {
+    wx.setNavigationBarTitle({
+        title: "心血管疾病风险评估"
+    });
     var that=this;
     var sess=app.qcloud.Session.get();
     if(sess&&sess.userinfo&&sess.userinfo.openId){

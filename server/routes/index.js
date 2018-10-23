@@ -29,6 +29,10 @@ router.post('/disease', controllers.disease.post)
 router.get('/disease', controllers.disease.get)
 router.post('/evaluate', controllers.evaluate.post)
 router.get('/evaluate', controllers.evaluate.get)
+//抑郁筛查评测
+router.get('/yiyumember', controllers.yiyumember.get)
+router.post('/yiyumember', controllers.yiyumember.post)
+router.get('/yiyuend', controllers.yiyuend.get)
 // --- 图片上传 Demo --- //
 // 图片上传接口，小程序端可以直接将 url 填入 wx.uploadFile 中
 router.post('/upload', controllers.upload)

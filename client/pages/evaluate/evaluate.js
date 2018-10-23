@@ -123,6 +123,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function onLoad() {
+    wx.setNavigationBarTitle({
+        title: "心血管疾病风险评估"
+    });
     var that=this;
     var sess=app.qcloud.Session.get();
     if(sess&&sess.userinfo&&sess.userinfo.openId){
