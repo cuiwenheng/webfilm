@@ -1,7 +1,10 @@
 <view class="page">
     <view class="content">
-        <view class="title" style="padding:20rpx 10rpx">
-            可视化膝关节炎患者自我评估问卷介绍
+        <view class="title" style="padding:20rpx 10rpx 0rpx 10rpx;">
+            可视化膝关节炎患者自我评估问卷
+        </view>
+        <view class="title" style="padding-bottom:20rpx;">
+            介绍
         </view>
         <view class="neirong">
         	由<text style="color:#644571">北京协和医院</text>骨科教授发起制定，开发过程基于专家组、广泛骨科医生和患者意愿。其中的问题均由专家精心设计，综合挑选。这些内容都是最重要、与疾病最相关的问题。

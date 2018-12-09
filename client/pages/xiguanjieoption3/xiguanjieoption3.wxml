@@ -7,7 +7,7 @@
         </view>
         
         <view style="width:100%;text-align:left;">
-            <view class="title">局部皮湿：</view>
+            <view class="title">局部皮温：</view>
             <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
                 <view class="weui-cell" style="padding:0;">
                     <view class="weui-cell__hd">
@@ -30,7 +30,7 @@
                     </view>
                 </view>
             </view>
-            <view class="title">晨健时间：</view>
+            <view class="title">晨僵时间：</view>
             <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
                 <view class="weui-cell" style="padding:0;">
                     <view class="weui-cell__hd">
