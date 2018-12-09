@@ -24,7 +24,7 @@ Page({
   },
   onLoad: function (options) {
     wx.setNavigationBarTitle({
-        title: "抑郁症筛查评测"
+        title: "膝关节炎自我评估"
     });
     that = this;
     var sess=app.qcloud.Session.get();
