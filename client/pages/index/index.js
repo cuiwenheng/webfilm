@@ -106,5 +106,55 @@ Page({
                 }
             })
         }
+    },
+    // 用户登录示例
+    getUserInfo: function () {
+        if (this.data.logged) return
+
+        util.showBusy('正在登录')
+
+        const session = qcloud.Session.get()
+
+        if (false) {
+            // 第二次登录
+            // 或者本地已经有登录态
+            // 可使用本函数更新登录态
+            qcloud.loginWithCode({
+                success: res => {
+                    this.setData({ userInfo: res, logged: true })
+                    util.showSuccess('登录成功')
+                    wx.setNavigationBarTitle({
+                        title: "膝关节炎自我评估"
+                    });
+                    wx.redirectTo({
+                        // url: '../yiyumember/yiyumember'
+                        url: '../xiguanjiemember/xiguanjiemember'
+                    })
+                },
+                fail: err => {
+                    console.error(err)
+                    util.showModel('登录错误', err.message)
+                }
+            })
+        } else {
+            // 首次登录
+            qcloud.login({
+                success: res => {
+                    this.setData({ userInfo: res, logged: true })
+                    util.showSuccess('登录成功')
+                    wx.setNavigationBarTitle({
+                        title: "膝关节炎自我评估"
+                    });
+                    wx.redirectTo({
+                        // url: '../yiyumember/yiyumember'
+                        url: '../xiguanjiemember/xiguanjiemember'
+                    })
+                },
+                fail: err => {
+                    console.error(err)
+                    util.showModel('登录错误', err.message)
+                }
+            })
+        }
     }
 })

@@ -1,0 +1,109 @@
+<view class="page">
+    <view class="content" >
+        <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">{{erromessage}}</view>
+        <view class="imgcenter">
+            <!-- <image src="{{host}}/resource/image/option1.png" style="width:{{image.autowidth}}rpx;height:{{image.autoheight}}rpx" bindload="autoimage" /> -->
+            <image src="./option3.jpg" style="width:{{image.autowidth}}rpx;height:{{image.autoheight}}rpx" bindload="autoimage" />
+        </view>
+        
+        <view style="width:100%;text-align:left;">
+            <view class="title">局部皮湿：</view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">日期</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <picker mode="date" value="{{option7.thedate}}" data-option="option7" start="1900-09-01" end="2030-09-01" bindchange="bindDateChange">
+                            <view class="weui-input">{{option7.thedate}}</view>
+                        </picker>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">评分</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" data-option="option7"   bindinput ="bindPingFenInput" value="{{option7.option7}}" placeholder="请填写评分"/>
+                    </view>
+                </view>
+            </view>
+            <view class="title">晨健时间：</view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">日期</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <picker mode="date" value="{{option8.thedate}}" data-option="option8" start="1900-09-01" end="2030-09-01" bindchange="bindDateChange">
+                            <view class="weui-input">{{option8.thedate}}</view>
+                        </picker>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">评分</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" data-option="option8"   bindinput ="bindPingFenInput" value="{{option8.option8}}" placeholder="请填写评分"/>
+                    </view>
+                </view>
+            </view>
+            <view class="title">蹲起：</view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">日期</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <picker mode="date" value="{{option9.thedate}}" data-option="option9" start="1900-09-01" end="2030-09-01" bindchange="bindDateChange">
+                            <view class="weui-input">{{option9.thedate}}</view>
+                        </picker>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">评分</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" data-option="option9"   bindinput ="bindPingFenInput" value="{{option9.option9}}" placeholder="请填写评分"/>
+                    </view>
+                </view>
+            </view>
+            <view class="title">上下楼梯：</view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">日期</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <picker mode="date" value="{{option10.thedate}}" data-option="option10" start="1900-09-01" end="2030-09-01" bindchange="bindDateChange">
+                            <view class="weui-input">{{option10.thedate}}</view>
+                        </picker>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">评分</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" data-option="option10"   bindinput ="bindPingFenInput" value="{{option10.option10}}" placeholder="请填写评分"/>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view style="clear:both;"></view>
+    </view>
+    <view class="footer">
+        <image class="back" bindtap="goBack" src="{{host}}/resource/image/back.png" style="width:60rpx;height:60rpx"/>
+        <image class="next" bindtap="goAhead" src="{{host}}/resource/image/next.png" style="width:60rpx;height:60rpx"/>
+    </view>
+</view>

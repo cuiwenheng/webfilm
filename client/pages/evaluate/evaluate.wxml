@@ -28,7 +28,10 @@
         </view>
     </view>
 
-    <view class="footer">
+    <!-- <view class="footer">
         <icon class="farwd" bindtap="goBack" type="download" size="33" color="#00A1E8"/>
+    </view> -->
+    <view class="finishview">
+        <view class="finishbutton" bindtap="goAhead">完成</view>
     </view>
 </view>

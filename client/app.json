@@ -20,7 +20,14 @@
     "pages/yiyuoption7/yiyuoption7",
     "pages/yiyuoption8/yiyuoption8",
     "pages/yiyuoption9/yiyuoption9",
-    "pages/yiyuend/yiyuend"
+    "pages/yiyuend/yiyuend",
+    "pages/xiguanjiemember/xiguanjiemember",
+    "pages/xiguanjiestart/xiguanjiestart",
+    "pages/xiguanjieoption1/xiguanjieoption1",
+    "pages/xiguanjieoption2/xiguanjieoption2",
+    "pages/xiguanjieoption3/xiguanjieoption3",
+    "pages/xiguanjieoption4/xiguanjieoption4",
+    "pages/xiguanjieend/xiguanjieend"
   ],
   "window":{
     "backgroundColor":"#EEEBE9",

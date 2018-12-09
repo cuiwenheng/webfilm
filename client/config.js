@@ -24,6 +24,9 @@ var config = {
         //抑郁症筛选路由
         yiyumember: `${host}/weapp/yiyumember`,
         yiyuend: `${host}/weapp/yiyuend`,
+        //膝关节评估路由
+        xiguanjiemember: `${host}/weapp/xiguanjiemember`,
+        xiguanjieoption: `${host}/weapp/xiguanjieoption`,
         // 测试的请求地址，用于测试会话
         requestUrl: `${host}/weapp/user`,
 

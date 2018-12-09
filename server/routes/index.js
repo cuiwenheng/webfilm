@@ -33,6 +33,11 @@ router.get('/evaluate', controllers.evaluate.get)
 router.get('/yiyumember', controllers.yiyumember.get)
 router.post('/yiyumember', controllers.yiyumember.post)
 router.get('/yiyuend', controllers.yiyuend.get)
+//膝关节评估
+router.get('/xiguanjiemember', controllers.xiguanjiemember.get)
+router.post('/xiguanjiemember', controllers.xiguanjiemember.post)
+router.get('/xiguanjieoption', controllers.xiguanjieoption.get)
+router.post('/xiguanjieoption', controllers.xiguanjieoption.post)
 // --- 图片上传 Demo --- //
 // 图片上传接口，小程序端可以直接将 url 填入 wx.uploadFile 中
 router.post('/upload', controllers.upload)

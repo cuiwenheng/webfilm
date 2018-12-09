@@ -1,0 +1,101 @@
+page{
+	display: flex;
+	flex-direction: column;
+	background-color:#EDEBE9;
+	box-sizing:border-box;
+	padding:30rpx 30rpx 30rpx 30rpx;
+}
+.page{
+	box-sizing:border-box;
+	width:100%;
+	position:relative;
+	background-color:#fff;
+}
+
+.header{
+	position:relative;
+	margin-top:74rpx;
+}
+.bigtitle {
+	color:rgb(56,211,159);
+	text-align: center;
+	font-size: 48rpx;
+	font-family:PingFangSC-Medium;
+	font-weight:blod;
+}
+.littletitle {
+	color:rgb(102,102,102);
+	text-align: center;
+	font-size: 24rpx;
+	font-family:PingFangSC-Regular;
+	font-weight:blod;
+}
+.content{
+	position:relative;
+	margin-top:30rpx;
+}
+.title{
+	padding: 20rpx;
+	font-size: 30rpx;
+	color: blue;
+}
+.imgcenter{
+	width:100%;
+	text-align:center;
+}
+image {
+	margin: 0 auto;
+}
+
+.question{
+	margin-top:140rpx;
+	width:100%;
+	text-align:center;
+}
+.option{
+	display:inline-block;
+}
+.marg-l{
+	margin-left:20rpx;
+}
+.marg-t{
+	margin-top:20rpx;
+}
+.checkbtton{
+	background-color:#fff;
+	width:260rpx;
+	height:79rpx;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.checkbtton.select{
+	background-color:rgb(56,211,159);
+}
+.checkbtton.select text{
+	color:#fff;
+}
+.checkbtton text{
+	color:rgb(56,211,159);
+	text-align: center;
+	font-size: 30rpx;
+	font-family:PingFangSC-Regular;
+	font-weight:blod;
+}
+.footer{
+	position:relative;
+	width:630rpx;
+	height:60rpx;
+	margin:30rpx;
+}
+.next{
+	position:absolute;
+	right:0rpx;
+}
+.back{
+	position:absolute;
+	left:0rpx;
+}
+.weui-label {
+	width:80rpx;
+}

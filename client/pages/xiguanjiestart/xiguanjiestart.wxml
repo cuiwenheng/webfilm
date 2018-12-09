@@ -1,0 +1,25 @@
+<view class="page">
+    <view class="content">
+        <view class="title" style="padding:20rpx 10rpx">
+            可视化膝关节炎患者自我评估问卷介绍
+        </view>
+        <view class="neirong">
+        	由<text style="color:#644571">北京协和医院</text>骨科教授发起制定，开发过程基于专家组、广泛骨科医生和患者意愿。其中的问题均由专家精心设计，综合挑选。这些内容都是最重要、与疾病最相关的问题。
+        </view>
+        <view class="timu">
+        	问卷共14个问题，疼痛相关问题5题，炎症相关问题3题，功能相关问题6题。
+        </view>
+        <view class="timu">
+        	每个问题严重程度从0分到10分。0分代表健康，10分代表非常严重。
+        </view>
+        <view class="jieshao" style="padding-top:20px;">
+        	本问卷将膝关节炎症、疼痛和功能等直播形象化，可以帮助您真实全面地记录病情，客观了解病情程度和治疗效果，并为医生制定治疗方案提供准确的参考依据。
+        </view>
+        <view class="jieshao" style="padding-bottom:40rpx;">
+        	有了这份问卷，您就可以在家轻松记录完成自我评分，在每个问题后面记录下您的打分和日期，每周一次或每月一次的定期评分有助于了解膝关节炎进展和评价治疗效果。
+        </view>
+    </view>
+    <view class="startview">
+        <view class="startbutton" bindtap="goAhead">开始评估</view>
+    </view>
+</view>

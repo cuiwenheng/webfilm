@@ -1,0 +1,335 @@
+<view class="page">
+    <view class="content" >
+        <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">{{erromessage}}</view>
+        <view class="title">静息痛：</view>
+        <view style="width:100%;text-align:left;" wx:for="{{option1}}">
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">日期</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.thedate}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">评分</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.option1}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="title">启动痛：</view>
+        <view style="width:100%;text-align:left;" wx:for="{{option2}}">
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">日期</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.thedate}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">评分</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.option2}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="title">运动痛：</view>
+        <view style="width:100%;text-align:left;" wx:for="{{option3}}">
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">日期</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.thedate}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">评分</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.option3}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="title">天气变化时疼痛：</view>
+        <view style="width:100%;text-align:left;" wx:for="{{option4}}">
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">日期</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.thedate}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">评分</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.option4}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="title">关节限寒：</view>
+        <view style="width:100%;text-align:left;" wx:for="{{option5}}">
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">日期</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.thedate}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">评分</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.option5}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="title">关节肿胀程度：</view>
+        <view style="width:100%;text-align:left;" wx:for="{{option6}}">
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">日期</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.thedate}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">评分</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.option6}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="title">局部皮湿：</view>
+        <view style="width:100%;text-align:left;" wx:for="{{option7}}">
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">日期</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.thedate}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">评分</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.option7}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="title">晨健时间：</view>
+        <view style="width:100%;text-align:left;" wx:for="{{option8}}">
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">日期</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.thedate}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">评分</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.option8}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="title">蹲起：</view>
+        <view style="width:100%;text-align:left;" wx:for="{{option9}}">
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">日期</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.thedate}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">评分</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.option9}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="title">上下楼梯：</view>
+        <view style="width:100%;text-align:left;" wx:for="{{option10}}">
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">日期</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.thedate}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">评分</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.option10}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="title">一次性站立时间：</view>
+        <view style="width:100%;text-align:left;" wx:for="{{option11}}">
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">日期</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.thedate}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">评分</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.option11}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="title">一次性步行距离：</view>
+        <view style="width:100%;text-align:left;" wx:for="{{option12}}">
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">日期</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.thedate}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">评分</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.option12}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="title">需要助行器械：</view>
+        <view style="width:100%;text-align:left;" wx:for="{{option13}}">
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">日期</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.thedate}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">评分</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.option13}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="title">做家务：</view>
+        <view style="width:100%;text-align:left;" wx:for="{{option14}}">
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">日期</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.thedate}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells weui-cells_after-title" style="width:45%;font-size:30rpx;float:left;margin-left:4%;">
+                <view class="weui-cell" style="padding:0;">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">评分</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input">{{item.option14}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view style="clear:both;"></view>
+    </view>
+    <!-- <view class="footer">
+        <image class="back" bindtap="goBack" src="{{host}}/resource/image/back.png" style="width:60rpx;height:60rpx"/>
+        <image class="next" bindtap="goAhead" src="{{host}}/resource/image/next.png" style="width:60rpx;height:60rpx"/>
+    </view> -->
+    <view class="finishview">
+        <view class="finishbutton" bindtap="goAhead">完成</view>
+    </view>
+</view>
