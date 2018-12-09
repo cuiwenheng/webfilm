@@ -110,7 +110,7 @@ Page({
   },
   goBack:function(e){
     wx.redirectTo({
-      url: '../xiguanjiestart/xiguanjiestart'
+      url: '../xiguanjieoption1/xiguanjieoption1'
     })
   },
   goAhead:function(e){
@@ -121,6 +121,22 @@ Page({
       this.setData({
         showTopTips:true,
         erromessage:"评分和日期都得填写"
+      })
+      setTimeout(function(){
+          that.setData({
+              showTopTips: false,
+              erromessage:''
+          });
+      }, 3000);
+      return;
+    }
+    if(this.data.option3.option3>10||this.data.option3.option3<0||
+      this.data.option4.option4>10||this.data.option4.option4<0||
+      this.data.option5.option5>10||this.data.option5.option5<0||
+      this.data.option6.option6>10||this.data.option6.option6<0){
+      this.setData({
+        showTopTips:true,
+        erromessage:"评分应在0-10之间"
       })
       setTimeout(function(){
           that.setData({

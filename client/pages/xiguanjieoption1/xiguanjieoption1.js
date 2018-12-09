@@ -120,6 +120,20 @@ Page({
       }, 3000);
       return;
     }
+    if(this.data.option1.option1>10||this.data.option1.option1<0||
+      this.data.option2.option2>10||this.data.option2.option2<0){
+      this.setData({
+        showTopTips:true,
+        erromessage:"评分应在0-10之间"
+      })
+      setTimeout(function(){
+          that.setData({
+              showTopTips: false,
+              erromessage:''
+          });
+      }, 3000);
+      return;
+    }
     var senddata=[];
     var arr1=this.data.option1;
     arr1.openId=this.data.openId

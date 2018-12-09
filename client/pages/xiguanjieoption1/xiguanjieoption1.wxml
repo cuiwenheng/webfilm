@@ -26,7 +26,7 @@
                         <view class="weui-label">评分</view>
                     </view>
                     <view class="weui-cell__bd">
-                        <input class="weui-input" data-option="option1"   bindinput ="bindPingFenInput" value="{{option1.option1}}" placeholder="请填写评分"/>
+                        <input class="weui-input" data-option="option1" type="number" min="0" max="10"  bindinput ="bindPingFenInput" value="{{option1.option1}}" placeholder="请填写评分"/>
                     </view>
                 </view>
             </view>
@@ -49,7 +49,7 @@
                         <view class="weui-label">评分</view>
                     </view>
                     <view class="weui-cell__bd">
-                        <input class="weui-input" data-option="option2"   bindinput ="bindPingFenInput" value="{{option2.option2}}" placeholder="请填写评分"/>
+                        <input class="weui-input" data-option="option2" type="number" min="0" max="10" bindinput ="bindPingFenInput" value="{{option2.option2}}" placeholder="请填写评分"/>
                     </view>
                 </view>
             </view>

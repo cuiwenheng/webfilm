@@ -26,7 +26,7 @@
                         <view class="weui-label">评分</view>
                     </view>
                     <view class="weui-cell__bd">
-                        <input class="weui-input" data-option="option7"   bindinput ="bindPingFenInput" value="{{option7.option7}}" placeholder="请填写评分"/>
+                        <input class="weui-input" data-option="option7" type="number" min="0" max="10"  bindinput ="bindPingFenInput" value="{{option7.option7}}" placeholder="请填写评分"/>
                     </view>
                 </view>
             </view>
@@ -49,7 +49,7 @@
                         <view class="weui-label">评分</view>
                     </view>
                     <view class="weui-cell__bd">
-                        <input class="weui-input" data-option="option8"   bindinput ="bindPingFenInput" value="{{option8.option8}}" placeholder="请填写评分"/>
+                        <input class="weui-input" data-option="option8" type="number" min="0" max="10"  bindinput ="bindPingFenInput" value="{{option8.option8}}" placeholder="请填写评分"/>
                     </view>
                 </view>
             </view>
@@ -72,7 +72,7 @@
                         <view class="weui-label">评分</view>
                     </view>
                     <view class="weui-cell__bd">
-                        <input class="weui-input" data-option="option9"   bindinput ="bindPingFenInput" value="{{option9.option9}}" placeholder="请填写评分"/>
+                        <input class="weui-input" data-option="option9" type="number" min="0" max="10"  bindinput ="bindPingFenInput" value="{{option9.option9}}" placeholder="请填写评分"/>
                     </view>
                 </view>
             </view>
@@ -95,7 +95,7 @@
                         <view class="weui-label">评分</view>
                     </view>
                     <view class="weui-cell__bd">
-                        <input class="weui-input" data-option="option10"   bindinput ="bindPingFenInput" value="{{option10.option10}}" placeholder="请填写评分"/>
+                        <input class="weui-input" data-option="option10" type="number" min="0" max="10"  bindinput ="bindPingFenInput" value="{{option10.option10}}" placeholder="请填写评分"/>
                     </view>
                 </view>
             </view>
