@@ -4,7 +4,7 @@
 
 // 此处主机域名修改成腾讯云解决方案分配的域名
 // var host = 'https://bwfw95mb.qcloud.la';
-var host = 'https://www.cuiwenheng.com';
+var host = 'https://mtm.cuiwenheng.com';
 
 var config = {
 

@@ -40,7 +40,7 @@ const CONF = {
     },
 
     // 其他配置 ...
-    serverHost: 'www.cuiwenheng.com',
+    serverHost: 'mtm.cuiwenheng.com',
     tunnelServerUrl: 'http://tunnel.ws.qcloud.la',
     tunnelSignatureKey: '27fb7d1c161b7ca52d73cce0f1d833f9f5b5ec89',
       // 可以注册一个腾讯云账号，获取一下配置。腾讯云相关配置可以查看云 API 秘钥控制台：https://console.cloud.tencent.com/capi
